@@ -1,0 +1,25 @@
+<h2>Orders list</h2>
+
+<table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th>Products</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Delivery address</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    <% @orderslist.each do |o| %>
+      <tr>
+        <td><%= o.orders_input %></td>
+        <td><%= o.name %></td>
+        <td><%= o.phone %></td>
+        <td><%= o.address %></td>
+      </tr>
+    <% end %>
+    </tbody>
+
+</table>
